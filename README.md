@@ -4,9 +4,9 @@
 *The project aimed at creating a local repository to help push local files to a remote repository.*
 
 ## Table of Contents
-#### 1. Project Installation
-#### 2. Project Usage
-#### 3. Attributed Credits
+1. Project Installation
+2. Project Usage
+3. Attributed Credits
 
 ## 1. Project Installation
 ### 1.1 Installation and Setup
