@@ -3,13 +3,18 @@
 ## Summary:
 *The project aimed at creating a local repository to help push local files to a remote repository.*
 
-## Contents
-[1. Project Installation](#project-installation)
-[2. Project Usage](#project-usage)
-[3. Attributed Credits](#attributed-credits)
+## Table of Contents
+1. Project Installation
+   1.1 Installations and Setup
+   1.2 Tracking Initiation
+   1.3 Linking with the Remote Repository
+   1.4 Cloning with the Remote Repository
+   1.5 Pushing Changes to Remote Repository
+3. Project Usage
+4. Attributed Credits
 
 ## 1. Project Installation
-### 1.1 Setup
+### 1.1 Installation and Setup
 *To pull this repository to your local machine, start by creating a local repository and depending on your operating system, install an appropriate git file on your local drive. You will first need to create a local copy of the project on your local machine. To do this, navigate to the location where you want to setup your local repository using the command line and create an empty folder. You might want to use the same name as name of project. Next, create a cloud GitHub account by going to;*
 
 [GitHub](http://github.com). 
