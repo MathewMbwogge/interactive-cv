@@ -5,11 +5,6 @@
 
 ## Table of Contents
 #### 1. Project Installation
-##### 1.1 Installation and Setup
-##### 1.2 Tracking Initiation
-##### 1.3 Linking with the Remote Repository
-##### 1.4 Cloning with the Remote Repository
-##### 1.5 Pushing Changes to Remote Repository
 #### 2. Project Usage
 #### 3. Attributed Credits
 
