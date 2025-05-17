@@ -1,4 +1,4 @@
-# Project: Interactive Professional CV
+# Project: Creating an Interactive Professional CV
 
 ## Summary:
 *The project aimed at creating a local repository to help push local files to a remote repository.*
