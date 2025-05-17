@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1 shrink-to-fit=no" 
+        />
+        <!--This will be the title of my html page-->
+        <title>My Sample CV</title>
+        <!--I am introducing my styling parameters for the different headings of my web page here-->
+        <style>
+            h1 {text-align: center;}
+        </style>
+        <style>
+            h2 {text-align: center; color: white; background-color: darkcyan;}
+        </style>
+        <style>
+            h3 {text-align: left; color: darkblue; font-weight: bold;}
+        </style>
+        <style>
+            h4 {text-align: left; color: orangered; font-size: large; font-weight: bold;}
+        </style>
+        <!--Defining a class "header" and setting the gradient background color to be reflected only in the text region-->
+        <style>
+            .header {
+                font-size: x-large;
+                font-weight: 900 bold;
+                font-family: Verdana, Tahoma;
+                text-transform: uppercase;
+                font-style: italic;
+                background-image: repeating-linear-gradient(45deg, blue 0.5%, red 30%);
+                background-clip: text;
+                color: transparent;
+                text-align: left;
+                padding: 0%;
+            }
+        </style>
+        <!--To give a more interactive design to all links, I want all links to highlight and change colors when hovered and visited. The user is empowered to know which links have been visited.-->
+        <style>
+            .a:link {
+                color: white;
+                background-color: rgb(249, 171, 76);
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                padding: 1px 3px;
+            }
+            .a:hover {
+                color: tomato;
+            }
+            .a:active {
+                color: navy;
+            }
+            .a:visited {
+                background-color: rgb(145, 243, 182);
+            }
+        </style>
+        <!--The following 3 styling should give a box design to my profile section and a cicular format to my photo, surrounded by the profile text using CSS shape-outside and CSS clip-path properties and circle function-->
+        <style>
+            div {
+                border: 1.5px solid green;
+                padding: 10px;
+                background-color: azure;
+            }
+            .clearfix ::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+        <style>
+            .img1 {
+                float: left;
+                clip-path: circle(50%);
+                shape-outside: circle(55%);
+                border-radius: 5px;
+                padding: 5;
+            }
+        </style>
+        <!--The below selector is meant to format my profile section text-->
+        <style>
+            .p1 {
+                font-family: Tahoma, Verdana;
+                font-size: medium;
+                font-weight: lighter;
+                font-style: italic;
+                color: royalblue;
+            }
+        </style>
+        <style>
+            #Prof {
+                text-decoration: none;
+            }
+        </style>
+        <style>
+            #bio {
+                color: blue;
+                font-weight: bold;
+            }
+        </style>
+        <!--I want to split my Skills section into two by introducing the below class, flex it and remove borders-->
+        <style>
+            .row {
+                display: flex;
+                justify-content: center;
+                border: 1.5px solid green;
+            }
+            .flexbox {
+                border: none;
+                padding: 0.5px;
+            }
+            .flexhead {
+                text-align: center;
+            }
+        </style>
+            <!--I want to introduce a number of short courses under my Eduction section and give then a tabular format, color emphasis, and change in font size once the user hovers the mouse on each row-->
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid skyblue;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            tr:hover {
+                background-color: coral;
+                font-size: 150%;
+            }
+            th {
+                background-color: aquamarine;
+            }
+        </style>
+        <!--I want to keep use engage give a better view of all listed items by highlighting list in reponse to the mouse-->
+        <style>
+            ul:hover {
+                background-color: cyan;
+                color: darkblue;
+                font-style: italic;
+                font-size: 120%;
+            }
+        </style>
+        <!--Introducing a style that will design the borders of and align social media logos with their links-->
+        <style>
+            .img-logo img{
+                float: left;
+                display: block;
+                border: 5px circle black;
+            }
+        </style>
+        <!--I am setting the background color to my webpage for better readibility while making sure my prefile and skills atnd out-->
+        <style>
+            .page-color {
+                background-color: #ddd; 
+                margin: 0; 
+                padding: 5px;
+            }
+        </style>
+        <!--Finally, I am introducing a style for the footer of my CV-->
+        <style>
+            footer {
+                text-align: center;
+                color: white;
+                background-color: darkblue;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body class="page-color">
+        <main>
+            <!--Introducing a title to my CV to flag desired position and setting the color for all h1 to darkblue and background color to skyblue-->
+            <header class="header">
+                <fieldset>
+                    <legend><h1>Project/Programme Manager</h1></legend>
+                </fieldset>
+            </header>
+            <hr>
+            <h2>Menu</h2>
+            <hr>
+            <nav>
+                <fieldset>
+                    <legend><h3>Jump to</h3></legend>
+                <ul>
+                    <li><a href="#Prof">Profile</a></li>
+                    <li><a href="#Bio">Biography</a></li>
+                    <li><a href="#Skill">Skills</a></li>
+                    <li><a href="#Studies">Education</a></li>
+                    <li><a href="#Work">Work Experience</a></li>
+                    <li><a href="#Contact">Contact Details</a></li>
+                </fieldset>
+                </ul>
+            </nav>
+            <hr>
+            <section id="Prof">
+                <h2>Profile</h2>
+                <hr>
+                <p style="font-size: 25px; color: royalblue;">Mathew Mbwogge</p>
+                <!--Adding a photo link to my LinkedIn profile to use here and set it into a frame style using an example from W3 Schools-->
+                <div class="clearfix">
+                <a id="Prof" href="#">
+                    <img class="img1" src="profilePic.png" width="210" height="195"
+                    alt="my CV profile photo" /> 
+                    <p class="p1">I am a high-energy level compassionate and multicultural professional who understands the current changing digital landscape and how that contributes to improving our processes.<br><br>I am a perfectionist and always aim at delivering the best in whatever circurmstance. As one who easily adapts to changing circumtances, I can cope in a fast-paced environments.<br><br>My qualifications in both business management and public health programme management make me good a fit for healthtech programmes. The current involvement in a cloud web development bootcamp is aimed at improving my capacity to programme management healthtech initiatives.<br><br>I am a curious learner who prioritises results over work done and my tenacity towards this drives my ambition to delivering the best.</p>
+                </div>
+                </a>
+            </section>
+            <hr>
+            <section id="Bio">
+                <h2>Biography</h2>
+                <hr>
+                <p id="bio">I am a certified project management professional having several years of experience spanning civil society organisations with good skills in web development, research, and digital marketing. I am passionate about healthcare research and hope to make a career in healthcare tech programme management.</p>
+                <!--I am adding a link to point to full biography-->
+                <p>Please see
+                    <a class="a" target="_blank"
+                    href="https://www.lshtm.ac.uk/study/student-experience/student-ambassadors/mathew-ngime">Full Biography</a>
+                </p>
+            </section>
+            <hr>
+            <section id="Skill">
+                <h2>Skills</h2>
+                <hr>
+                <div class="row">
+                    <div class="flexbox">
+                        <h3 class="flexhead">IT Tools</h3>
+                        <p>
+                            <ul>
+                                <li>Good use of Power Automate</li>
+                                <li>Mastery of MS Office Suite</li>
+                                <li>Mastery of Python and JavaScript</li>
+                                <li>Mastery of Stata and Power BI</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="flexbox">
+                        <h3 class="flexhead">Certifications</h3>
+                        <p>
+                            <ul>
+                                <li>Certified in PRINCE2 v7</li>
+                                <li>Certified in MS Projects</li>
+                                <li>Certified in Scrum Master</li>
+                                <li>English Proficiency (IELTS)</li>
+                            </ul>
+                        </p>
+                    </div>
+            </section>
+            <hr>
+            <section id="Studies">
+                <h2>Education</h2>
+                <hr>
+                <h3>2017/2018: London School of Hygiene & Tropical Medicine</h3>
+                <ul>
+                    <li>MSc Public Health for Eye Care</li>
+                </ul>
+                <h3>2009-2013: Advanced School of Economics & Commerce</h3>
+                <ul>
+                    <li>Masters in Entrepreneurship Management</li>
+                </ul>
+                <h3>1999-2003: University of Buea</h3>
+                <ul>
+                    <li>BSc Economics</li>
+                </ul>
+                <p>
+                    <h4 style="font-weight: bold;">Relevant Short Courses</h4>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Institution</th>
+                            <th>Course Title</th>
+                        </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>Happy Ltd</td>
+                            <td>Emerging Frontline Clinical & Care Leadership Programme</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>NHS Clinical Leaders Network</td>
+                            <td>Introduction to Clinical and Care Leadership</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Professional Association for Healthcare Finance (HFMA)</td>
+                            <td>Project Management</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Professional Association for Healthcare Finance (HFMA)</td>
+                            <td>Risk Management</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>National Association of State Boards of Accouncy</td>
+                            <td>Project Management Foundations</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>Christian Blind Mission</td>
+                            <td>Inclusive Project Management</td>
+                        </tr>
+                    </table>
+                </p>
+            </section>
+            <hr>
+            <section id="Work">
+                <h2>Work Experience</h2>
+                <hr>
+                <h3>July 2024 - Present: NHS Clinical Leaders Network <a class="a" target="_blank" href="https://cln.nhs.uk/"><em>(visit website)</em></a></h3>
+                <h4>Project Officer</h4>
+                <ul>
+                    <li>Support the National Programmes Clinical Lead to develop and implement the suite of projects.</li>
+                    <li>Engage with a range of internal and external stakeholders to coordinate project tasks and meetings.</li>
+                    <li>Work with the CLN management team to efficiently implement agreed plans.</li>
+                    <li>Assist with maintenance of project plans, utilising project management software/tools.</li>
+                    <li>Track and maintain programme logs and registers e.g. risk register, lessons log.</li>
+                    <li>Support the National Operations Director and National Programmes Clinical Lead in digital marketing.</li>
+                </ul>
+                <h3>July 2023 - July 2024: NHS Blood and Transplant <a class="a" target="_blank" href="https://www.nhsbt.nhs.uk/"><em>(visit website)</em></a></h3>
+                <h4>Healthcare Assistant</h4>
+                <ul>
+                    <li>Actively screening donors for eligible plasma donation and providing counselling as needed.</li>
+                    <li>Actively participating in performance evaluation and feedback for continuous service improvement.</li>
+                    <li>Preparing the Plasmapheresis machines, related equipment, and paperwork for plasma donation.</li>
+                    <li>Collecting plasma from donors in line with regulatory clinical guidelines and performance standards.</li>
+                    <li>Observing the donor wellbeing throughout the process and managing adverse events.</li>
+                    <li>Ensuring that the collected plasma meets Good Manufacturing Practice requirements.</li>
+                </ul>
+                <h3>June 2015 - March 2020: Africa Eye Foundation <a class="a" target="_blank" href="https://www.micei.org/"><em>(vist website)</em></a></h3>
+                <h4>Programme Manager</h4>
+                <ul>
+                    <li>Championed the execution of the US$340468 USAID funded school screening project, using MS Office and MS Projects.</li>
+                    <li>Took active part in developing the US$288105 Lions SightFirst funded eye personnel capacity building project.</li>
+                    <li>Assisted in the business case for a US$1248473 internal capacity building project, funded by Christian Blind Mission.</li>
+                    <li>Coordinated the patient supply of the US$249673 Orbis-funded hospital-based paediatric capacity building project.</li>
+                    <li>Championed the implementation of the US$1000000 Standard Chartered Bank Seeing Is Believing (SiB) funded project.</li>
+                    <li>Engaged in team building and the training of community eye health volunteers using PowerPoint presentations.</li>
+                    <li>Implemented the US$93579 Lions Club International Foundation funded Diabetic Retinopathy Screening (DRS) project.</li>
+                    <li>Led the mobile screening component of the Cameroon Cataract Performance Bond.</li>
+                </ul>
+                <h3>NMay 2014 - Nov 2014: Bread For Life International Foundation <a class="a" target="_blank" href="https://breadforlife.org/"><em>(visit website)</em></a></h3>
+                <h4>Project Manager</h4>
+                <ul>
+                    <li>Deputised the Chief Executive Officer in project planning and development.</li>
+                    <li>Conducted online research on grant opportunities and needed paperwork.</li>
+                    <li>Managed the project team using key performance indicators and evaluations.</li>
+                </ul>
+                <h3>Nov 2013 - Feb 2015: Mpabat Construction Ltd <a class="a" target="_blank" href="https://www.mpabat-btp.com/"><em>(visit website)</em></a></h3>
+                <h4>Branch Manager</h4>
+                <ul>
+                    <li>Supervised sales and accounting data entry using GESCOM and SAGE SAARI.</li>
+                    <li>Managed the daily operations, including supply chain, sales force, and daily performance.</li>
+                    <li>Carried out monthly inventory and reconciliation with monthly cash flow.</li>
+                </ul>
+                <h3>Dec 2003 - Dec 2008: Chede Union Ltd <a class="a" target="_blank" href="https://chede.org/"><em>(visit website)</em></a></h3>
+                <h4>Project Manager</h4>
+                <ul>
+                    <li>Provided projects and  administrative support to the Chief Executive Officer.</li>
+                    <li>Assisted in grant proposal writing, project execution, and reporting using MS Office suite.</li>
+                </ul>
+            </section>
+            <hr>
+            <section id="Contact">
+                <h2>Contact Details</h2>
+                <hr>
+                <fieldset>
+                    <legend><h3>Mathew Mbwogge Ngime</h3></legend>
+                    <p><em><b>Email:</b> m.mbwoge@gmail.com</em></p>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Connect On</h3></legend>
+                    <span class="img-logo">
+                    <img src="LinkedIn.png" alt="LinkedIn logo" height="22%" width="22">
+                    <a class="a" target="_blank"
+                    href="https://www.linkedin.com/in/matmbwogge/">LinkedIn</a>
+                    <p>
+                        <img src="X-logo.png" alt="Twitter logo" height="1.7%" width="1.7%">
+                        <a class="a" target="_blank"
+                        href="https://x.com/switswet">X/Twitter</a>
+                    </p>
+                    <p>
+                        <img src="facebook.png" alt="Facebook logo" height="1.5%" width="1.7%">
+                        <a class="a" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=61567241009795">Facebook</a>
+                    </p>
+                    </span>
+                </fieldset>
+            </section>
+            <!--References-->
+            <!--Goksel Yesiller (2022) CSS BOX MODEL, Medium. Available at: https://medium.com/@gokselyesiller/css-box-model-67b8cbbce528 (Accessed: 14 December 2024).
+            Haim, I. (2024) How To Center A Table In CSS / HTML, Elementor. Available at: https://elementor.com/blog/how-to-center-a-table-in-css/ (Accessed: 11 December 2024).
+            hyperiondev-bootcamps (2024) T03 – CSS - Overview, GitHub.com. Available at: https://github.com/hyperiondev-bootcamps/MM24110016008/blob/main/T03 – CSS - Overview/05-005-1_CSS Overview.pdf (Accessed: 14 December 2024).
+            Hyperiondev (2024) T02-Getting Started with Your Bootcamp and HTML, Github. Available at: https://github.com/hyperiondev-bootcamps/MM24110016008/tree/main/T02 – Getting Started with Your Bootcamp and HTML (Accessed: 9 December 2024).
+            JW (2020) 9 fancy title design in CSS you need to learn now, Frontend Weekly. Available at: https://medium.com/front-end-weekly/9-fancy-title-design-in-css-you-need-to-learn-now-75dd24b48ca (Accessed: 14 December 2024).
+            Nazir, K. (no date) CSS: Use flex to split your HTML page into different sections, Medium. Available at: https://medium.com/@kabir4691/css-use-flex-to-split-your-html-page-into-different-sections-e80070888138 (Accessed: 14 December 2024).
+            SheCodes (no date) [HTML] - How to use an image as a link in HTML, SheCodes. Available at: https://www.shecodes.io/athena/77448-how-to-use-an-image-as-a-link-in-html#google_vignette (Accessed: 10 December 2024).
+            Traversy Media (2017) Bootstrap Beginner Crash Course, Youtube. Available at: https://www.youtube.com/watch?v=5GcQtLDGXy8 (Accessed: 14 December 2024).
+            W3Schools (no date) HTML Color Names, W3Schools. Available at: https://www.w3schools.com/tags/ref_colornames.asp (Accessed: 10 December 2024).
+            Wilkins, J. (no date) How to Indent HTML Code – And Why it’s Important, FreeCodeCamp.org. Available at: https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/ (Accessed: 10 December 2024).-->
+        </main>
+        <footer>
+            <p>Copyright ©Mathew Mbwogge 2024 All rights reserved</p>
+            <p>Cloud Web Development</p>
+        </footer>
+    </body>
+</html>
